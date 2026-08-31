@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沙雕幺零三的网站</title>
+    <!-- 引用网站全局样式 -->
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* 关于页面专属样式（不影响其他页面） */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 0 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e9edf2;
+            flex-wrap: wrap;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            flex-shrink: 0;
+        }
+        .profile-info h1 {
+            margin: 0 0 8px 0;
+            border-left: none;
+            padding-left: 0;
+            font-size: 32px;
+        }
+        .profile-info .bio {
+            font-size: 16px;
+            color: #5a6b7c;
+            margin: 0;
+        }
+        .profile-info .badge {
+            display: inline-block;
+            background: #f0f4f8;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #4f9cf7;
+            margin-top: 10px;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1f2e3b;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 16px;
+            margin: 16px 0 24px;
+        }
+        .stats-grid .stat-item {
+            background: #f7f9fc;
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .stats-grid .stat-item .number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2e3b;
+        }
+        .stats-grid .stat-item .label {
+            font-size: 13px;
+            color: #7a8a9e;
+            margin-top: 4px;
+        }
+        .works-list {
+            list-style: none;
+            padding: 0;
+        }
+        .works-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f4f8;
+        }
+        .works-list li:last-child {
+            border-bottom: none;
+        }
+        .works-list .work-title {
+            font-weight: 500;
+            color: #1f2e3b;
+        }
+        .works-list .work-desc {
+            font-size: 14px;
+            color: #7a8a9e;
+            margin-left: 12px;
+        }
+        .social-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 8px 0 16px;
+        }
+        .social-links a {
+            display: inline-block;
+            padding: 6px 18px;
+            background: #f0f4f8;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+        .social-links a:hover {
+            background: #4f9cf7;
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-info h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ========== 导航栏（与首页保持一致） ========== -->
+        <div style="text-align: center; margin-bottom: 30px; padding: 10px 0; border-bottom: 2px solid #eee;">
+            <a href="/index.html" style="margin: 0 15px;">🏠 首页</a>
+            <a href="/about.html" style="margin: 0 15px; font-weight: 600; color: #1f2e3b;">📖 关于我</a>
+            <!-- 如果有其他页面，在这里继续添加 -->
+            <!-- <a href="/pages/contact.html" style="margin: 0 15px;">📧 联系</a> -->
+        </div>
+
+        <!-- ========== 个人资料头部 ========== -->
+        <div class="profile-header">
+            <img class="avatar" src="https://i0.hdslb.com/bfs/face/4faa788ec1affdf6b27f98feb219b308864afe7b.jpg" alt="沙雕幺零三头像" referrerpolicy="no-referrer">
+            <div class="profile-info">
+                <h1>沙雕幺零三</h1>
+                <p class="bio">一个沙雕的科技区UP主<br>一名iKUN<br>喜欢就关注我吧！</p>
+                <span class="badge">🏀学业繁忙，较少更新</span>
+            </div>
+        </div>
+
+        <!-- ========== 数据统计 ========== -->
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="number">--</div>
+                <div class="label">📹 视频</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">--</div>
+                <div class="label">👥 粉丝</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">--</div>
+                <div class="label">👍 获赞</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">--</div>
+                <div class="label">📅 入站</div>
+            </div>
+        </div>
+
+        <!-- ========== 个人简介 ========== -->
+        <h2 class="section-title">🙋 关于我（这都是 AI 写的，不想改了）</h2>
+        <p>
+            你好！我是 <strong>沙雕幺零三</strong>，一名来自 B站 的 UP 主，目前是一名高二学生。
+            因为对操作系统和软件魔改感兴趣，我制作了 <strong>Caixukun OS</strong> 系列镜像，
+            也会分享一些有趣的科技内容和日常动态。
+        </p>
+        <p>
+            虽然学业繁忙，更新不会太频繁，但我会尽力维护好现有的资源，
+            也欢迎大家加入粉丝群一起交流！
+        </p>
+
+        <!-- ========== 我的作品 ========== -->
+        <h2 class="section-title">🛠️ 我的作品（AI 写的，不想改了）</h2>
+        <ul class="works-list">
+            <li>
+                <span class="work-title">Caixukun OS 系列镜像</span>
+                <span class="work-desc">包含 Caixukun 10 / 8.1 / 7 / XP 等多个版本</span>
+            </li>
+            <li>
+                <span class="work-title">Caixukun OS Four In One</span>
+                <span class="work-desc">四合一整合镜像（10 / 10 Pro / 8.1 / 7）</span>
+            </li>
+            <li>
+                <span class="work-title">Virtual CXK</span>
+                <span class="work-desc">虚拟机安装程序</span>
+            </li>
+            <li>
+                <span class="work-title">Watermelon 11 / Chicks 2.5</span>
+                <span class="work-desc">更多魔改系统镜像</span>
+            </li>
+        </ul>
+
+        <!-- ========== 社交媒体 ========== -->
+        <h2 class="section-title">🔗 找到我</h2>
+        <div class="social-links">
+            <a href="https://space.bilibili.com/1014355041" target="_blank">📺 B站空间</a>
+            <a href="https://qm.qq.com/q/vZ0JNza62I" target="_blank">🐧 QQ粉丝群</a>
+            <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,5aUd8gOsJ51yhW8AP8UTVbr7UUt4D2uKcAJu06BU9zBuRVJIwrSsXmL8oFqU5ajJ&_dt_no_comment=1&origin=11" target="_blank">📌 钉钉粉丝群</a>
+        </div>
+
+        <!-- ========== 页脚 ========== -->
+        <div class="footer" style="font-size: 14px; color: #7a8a9e;">
+            © 2022-2026 Jinitaimei Corporation。保留所有权利。（这里终于不是经典的"不保留所有权利"了[doge]）
+        </div>
+    </div>
+</body>
+</html>
